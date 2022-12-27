@@ -7,11 +7,18 @@
         "home": 564
     },
     {
-        "name": "joão",
+        "name": "João",
         "age": 29,
         "vehicle": false,
         "street": 6,
         "home": 203
+    },
+    {
+        "name": "Maria",
+        "age": 33,
+        "vehicle": false,
+        "street": 4,
+        "home": 254
     }
 
 ]
