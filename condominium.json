@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Rafael",
+        "age": 35,
+        "vehicle": true,
+        "street": 4,
+        "home": 564
+    },
+    {
+        "name": "joão",
+        "age": 29,
+        "vehicle": false,
+        "street": 6,
+        "home": 203
+    }
+
+]
