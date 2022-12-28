@@ -1,0 +1,27 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+}
+
+/* header */
+header {
+  background-color: #20232a;
+  color: #61dafb;
+  padding: 0 15px;
+}
+
+/* secction footer */
+footer {
+  background-color: #f2f3f6;
+  text-align: center;
+}
