@@ -3,7 +3,16 @@ import './style.css';
 
 function Header() {
   return (
-    <header>Trabalhando com componentes</header>
+    <header>
+      <div className='limit'>
+        <h1>CondominiumSystem</h1>
+        <div>
+          <a href='teste'>Link1</a>
+          <a href='teste'>Link2</a>
+          <a href='teste'>Link3</a>
+        </div>
+      </div>
+    </header>
   );
 }
 
