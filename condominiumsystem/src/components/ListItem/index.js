@@ -3,7 +3,7 @@ import './style.css';
 
 function ListItem() {
     return(
-        <div className="card-container">
+        <div className="card">
             <p>Name:</p>
             <p>Age:</p>
             <p>Vehicle:</p>

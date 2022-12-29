@@ -1,0 +1,15 @@
+.area-button{
+    width: 100%;
+    margin-top: 100px;
+}
+  
+.button-back {
+    padding: 20px;
+    text-decoration: none;
+    
+    border-radius: 15px;
+  
+    background-color: #12347e;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
