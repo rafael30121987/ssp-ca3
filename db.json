@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "title": "livro1",
+      "author": "autor1",
+      "id": 1
+    },
+    {
+      "title": "testte",
+      "author": "testtteee",
+      "id": 2
+    },
+    {
+      "title": "default title",
+      "author": "default author",
+      "id": 3
+    },
+    {
+      "title": "default title",
+      "author": "default author",
+      "id": 4
+    }
+  ]
+}
