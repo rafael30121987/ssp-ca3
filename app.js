@@ -1,5 +1,3 @@
-
-
 const container = document.querySelector('.container');
 const message = cme2(container, 'div', 'Message Area');
 message.classList.add('message');
