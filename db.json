@@ -1,14 +1,3 @@
 {
-  "posts": [
-    {
-      "title": "default title",
-      "author": "default author",
-      "id": 6
-    },
-    {
-      "title": "default title",
-      "author": "default author",
-      "id": 7
-    }
-  ]
+  "posts": []
 }
