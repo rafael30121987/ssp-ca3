@@ -1,12 +1,12 @@
 const container = document.querySelector('.container');
-const message = cme2(container, 'div', 'Message Area');
+const message = createMyElement2(container, 'div', 'Message Area');
 message.classList.add('message');
 const val1 = document.querySelector('.val');
 const val2 = document.querySelector('.val2');
 const output = document.querySelector('.output');
 const baseurl = 'http://localhost:3000/';
 const button1 = document.querySelector('.btn');
-const button2 = cme2(container, 'button', 'Load Books');
+const button2 = createMyElement2(container, 'button', 'Load Books');
 button2.classList.add('loadBooks');
 button1.textContent = 'Create New';
 button1.classList.add('selInfo');
@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', getAllPosts);
 button1.addEventListener('click', addPost);
 button2.addEventListener('click', getAllPosts);
  
+// function that adds new items by the POST method by placing values
 function addPost(e) {
     console.log('ready');
     e.preventDefault();
@@ -46,7 +47,8 @@ function addPost(e) {
 function myMessage(html) {
     message.innerHTML = html;
 }
- 
+
+//function to load all posts
 function getAllPosts(e) {
     console.log('page ready');
     const url = baseurl + 'posts';
@@ -57,8 +59,7 @@ function getAllPosts(e) {
         })
 }
  
- 
- 
+// function that creates a loop to create an item with each element
 function pageContents(data) {
     console.log(data);
     output.innerHTML = '';
@@ -67,7 +68,7 @@ function pageContents(data) {
     });
 }
  
- 
+//function to create an item, containing div, box, inputs and buttons
 function makeItem(el) {
     console.log(el);
     const main = cme(output, 'div', '');
@@ -99,6 +100,8 @@ function makeItem(el) {
     })
 }
  
+//function to update the json file data located in the baseurl url in the posts area
+//receives by parameter the file and the id of the data to be changed
 function updateItem(json, id) {
     const url = baseurl + 'posts/' + id;
     const opts = {
@@ -115,13 +118,15 @@ function updateItem(json, id) {
         })
 }
  
-function cme2(parent, typeEle, html) {
+//function to create the elements to display the action message and the button to load the items from the json file
+function createMyElement2(parent, typeEle, html) {
     const el = document.createElement(typeEle);
     parent.prepend(el);
     el.innerHTML = html;
     return el;
 }
  
+//function to create the div elements, buttons and update entries of each file item
 function cme(parent, typeEle, html) {
     const el = document.createElement(typeEle);
     parent.append(el);
